@@ -39,8 +39,8 @@ The generated public directory is ignored. GitHub Pages builds it from source th
 Project descriptions are grounded in their primary records:
 
 - [CaloTrilogy](https://arxiv.org/abs/2606.04165)
-- [Particle Transformer](https://arxiv.org/abs/2202.03772) and its [reference implementation](https://github.com/jet-universe/particle_transformer)
-- [Structured state-space models for high-energy physics](https://arxiv.org/abs/2501.16237)
+- [Particle Transformer](https://proceedings.mlr.press/v162/qu22b.html) and its [reference implementation](https://github.com/jet-universe/particle_transformer)
+- [Structured state-space models for high-energy physics](https://proceedings.mlr.press/v258/jiang25c.html)
 - [CMS search for Majorana neutrinos in vector-boson fusion](https://cms-results.web.cern.ch/cms-results/public-results/publications/EXO-21-003/)
 - [DELPHI simulation pipeline](https://github.com/delphi-fullDST-edm4hep/delphi-sim-pipeline)
 - [Google Scholar profile](https://scholar.google.com/citations?user=D7mhn64AAAAJ)
