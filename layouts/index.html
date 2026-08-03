@@ -108,11 +108,31 @@
       <div class="cms-analysis-grid">
         {{ range $home.cms }}
         {{- $analysis := . -}}
+        {{- $plot := resources.Get .plot -}}
+        {{- $plotSmall := $plot.Resize "520x webp q80" -}}
+        {{- $plotLarge := $plot.Resize "900x webp q84" -}}
         <article class="cms-analysis">
           <div class="cms-analysis-meta">
             <p class="cms-analysis-code">{{ .code }}</p>
             <p>{{ .kind }}</p>
           </div>
+          <figure class="cms-analysis-plot">
+            <a class="cms-analysis-plot-link" href="{{ .plotLink }}" aria-label="Open {{ .plotFigure }} on the CMS result page">
+              <img
+                src="{{ $plotLarge.RelPermalink }}"
+                srcset="{{ $plotSmall.RelPermalink }} {{ $plotSmall.Width }}w, {{ $plotLarge.RelPermalink }} {{ $plotLarge.Width }}w"
+                sizes="(max-width: 960px) calc(100vw - 96px), 36vw"
+                width="{{ $plotLarge.Width }}"
+                height="{{ $plotLarge.Height }}"
+                loading="lazy"
+                decoding="async"
+                alt="{{ .plotAlt }}">
+            </a>
+            <figcaption>
+              <span>{{ .plotCaption }}</span>
+              <a href="{{ .plotLink }}">{{ .plotFigure }} <span aria-hidden="true">↗</span></a>
+            </figcaption>
+          </figure>
           <h4>{{ .title }}</h4>
           <p>{{ .description }}</p>
           <div class="card-links">
@@ -135,14 +155,16 @@
   <div class="shell about-grid">
     <div class="about-portrait-wrap">
       <div class="portrait-frame">
-        <img
-          src="{{ $portraitLarge.RelPermalink }}"
-          srcset="{{ $portraitSmall.RelPermalink }} {{ $portraitSmall.Width }}w, {{ $portraitLarge.RelPermalink }} {{ $portraitLarge.Width }}w"
-          sizes="(max-width: 760px) 72vw, 34vw"
-          width="{{ $portraitLarge.Width }}"
-          height="{{ $portraitLarge.Height }}"
-          loading="lazy"
-          alt="Portrait of Sitian Qian at a public event">
+        <div class="portrait-media">
+          <img
+            src="{{ $portraitLarge.RelPermalink }}"
+            srcset="{{ $portraitSmall.RelPermalink }} {{ $portraitSmall.Width }}w, {{ $portraitLarge.RelPermalink }} {{ $portraitLarge.Width }}w"
+            sizes="(max-width: 760px) 72vw, 34vw"
+            width="{{ $portraitLarge.Width }}"
+            height="{{ $portraitLarge.Height }}"
+            loading="lazy"
+            alt="Portrait of Sitian Qian at a public event">
+        </div>
       </div>
       <p class="portrait-label">Sitian Qian · 钱思天</p>
     </div>

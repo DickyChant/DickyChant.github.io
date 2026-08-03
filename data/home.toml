@@ -82,6 +82,11 @@ title = 'The relative sign of Higgs couplings'
 description = 'The first study of WH production through vector-boson scattering, combining resolved and boosted Higgs-to-bottom-quark topologies to test the relative sign of the Higgs couplings to W and Z bosons.'
 result = 'https://cms-results.web.cern.ch/cms-results/public-results/publications/HIG-23-007/'
 resultLabel = 'Explore the CMS result'
+plot = 'images/cms/hig-23-007-coupling-plane.png'
+plotAlt = 'Observed exclusion regions in the kappa W versus kappa Z Higgs coupling plane, with the standard model expectation marked by a star.'
+plotCaption = 'The relative-sign test in the κW–κZ plane.'
+plotFigure = 'CMS Figure 5'
+plotLink = 'https://cms-results.web.cern.ch/cms-results/public-results/publications/HIG-23-007/#Figure_005'
 
 [[cms]]
 code = 'HIN-24-021'
@@ -92,6 +97,11 @@ result = 'https://cms-results.web.cern.ch/cms-results/public-results/publication
 resultLabel = 'Explore the CMS result'
 note = 'https://cds.cern.ch/record/2915245'
 noteLabel = 'See the jet-tagging note'
+plot = 'images/cms/hin-24-021-centrality-cross-section.png'
+plotAlt = 'Measured top-pair production cross sections in central, semicentral, and inclusive lead-lead collisions compared with an EPPS21 nuclear PDF prediction.'
+plotCaption = 'Top-pair production across PbPb centralities.'
+plotFigure = 'CMS Figure 10a'
+plotLink = 'https://cms-results.web.cern.ch/cms-results/public-results/publications/HIN-24-021/#Figure_010-a'
 
 [[cms]]
 code = 'EXO-24-031'
@@ -100,6 +110,11 @@ title = 'Light pseudoscalars in four electrons'
 description = 'The first LHC search for Higgs decays to pairs of light pseudoscalars in the four-electron final state, using a purpose-built track-and-calorimeter classifier for highly collimated electron pairs.'
 result = 'https://cms-results.web.cern.ch/cms-results/public-results/publications/EXO-24-031/'
 resultLabel = 'Explore the CMS result'
+plot = 'images/cms/exo-24-031-four-electron-spectrum.png'
+plotAlt = 'Four-electron invariant-mass spectrum with data, the fitted background, uncertainty bands, and a benchmark Higgs-to-two-axion-like-particles signal.'
+plotCaption = 'A four-electron spectrum with an ALP benchmark.'
+plotFigure = 'CMS Figure 1'
+plotLink = 'https://cms-results.web.cern.ch/cms-results/public-results/publications/EXO-24-031/#Figure_001'
 
 [[cms]]
 code = 'EXO-21-003'
@@ -108,6 +123,11 @@ title = 'Majorana neutrinos through VBF'
 description = 'The first vector-boson-fusion search for heavy Majorana neutrinos and the Weinberg operator, using same-sign dimuons to extend direct sensitivity into the multi-TeV regime.'
 result = 'https://cms-results.web.cern.ch/cms-results/public-results/publications/EXO-21-003/'
 resultLabel = 'Explore the CMS result'
+plot = 'images/cms/exo-21-003-majorana-limit.png'
+plotAlt = 'Observed and expected upper limits on the heavy-neutrino mixing element as a function of the heavy-neutrino mass, compared with earlier CMS searches.'
+plotCaption = 'Direct reach in heavy-neutrino mass and mixing.'
+plotFigure = 'CMS Figure 3'
+plotLink = 'https://cms-results.web.cern.ch/cms-results/public-results/publications/EXO-21-003/#Figure_003'
 
 [[focus]]
 number = '01'

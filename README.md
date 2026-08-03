@@ -54,6 +54,7 @@ Project descriptions are grounded in their primary records:
 
 - Open CMS detector: CERN / CMS Collaboration, from the [CERN article](https://home.cern/first-observation-single-top-quark-production-w-and-z-bosons/)
 - CMS HGCAL modules: André David Tinoco Mendes / CERN, © 2025 CERN, [CERN Document Server record 2941188](https://cds.cern.ch/record/2941188)
+- CMS result plots: CMS Collaboration, [HIG-23-007 Figure 5](https://cms-results.web.cern.ch/cms-results/public-results/publications/HIG-23-007/#Figure_005), [HIN-24-021 Figure 10a](https://cms-results.web.cern.ch/cms-results/public-results/publications/HIN-24-021/#Figure_010-a), [EXO-24-031 Figure 1](https://cms-results.web.cern.ch/cms-results/public-results/publications/EXO-24-031/#Figure_001), and [EXO-21-003 Figure 3](https://cms-results.web.cern.ch/cms-results/public-results/publications/EXO-21-003/#Figure_003)
 - Header headshot, event portrait, and trail companion: personal archive
 
 The CERN images are used for informational purposes with attribution under the [CERN terms of use](https://copyright.web.cern.ch/). No CERN endorsement is implied.
