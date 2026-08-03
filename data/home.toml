@@ -55,13 +55,6 @@ paper = 'https://proceedings.mlr.press/v258/jiang25c.html'
 paperLabel = 'Read the paper'
 
 [[research]]
-kind = 'CMS physics · PRL 2023'
-title = 'Majorana neutrinos at CMS'
-description = 'The first LHC search to use vector-boson fusion to probe heavy Majorana neutrinos and the Weinberg operator, extending direct sensitivity into the multi-TeV regime.'
-paper = 'https://cms-results.web.cern.ch/cms-results/public-results/publications/EXO-21-003/'
-paperLabel = 'Explore the CMS result'
-
-[[research]]
 kind = 'Lepton colliders · 2020–2025'
 title = 'Lepton-collider physics'
 description = 'A publication program spanning electron–muon, muon, same-sign muon, neutrino–lepton, and neutrino–neutrino colliders—from flavor and Majorana-neutrino searches to vector-boson scattering and quantum entanglement.'
@@ -69,6 +62,44 @@ paper = 'https://scholar.google.com/citations?user=D7mhn64AAAAJ'
 paperLabel = 'See the publication record'
 code = 'https://github.com/delphi-fullDST-edm4hep/delphi-sim-pipeline'
 codeLabel = 'Explore DELPHI simulation'
+
+[cmsProgram]
+title = 'Four analyses, one experimental thread.'
+body = 'Across CMS, I use rare signatures and machine-learned reconstruction to study Higgs couplings, top production in hot QCD matter, light pseudoscalars, and neutrino-mass mechanisms.'
+
+[[cms]]
+code = 'HIG-23-007'
+kind = 'Higgs physics · PLB 2025'
+title = 'The relative sign of Higgs couplings'
+description = 'The first study of WH production through vector-boson scattering, combining resolved and boosted Higgs-to-bottom-quark topologies to test the relative sign of the Higgs couplings to W and Z bosons.'
+result = 'https://cms-results.web.cern.ch/cms-results/public-results/publications/HIG-23-007/'
+resultLabel = 'Explore the CMS result'
+
+[[cms]]
+code = 'HIN-24-021'
+kind = 'Heavy-ion physics · 2026'
+title = 'Top quarks in lead–lead collisions'
+description = 'The first measurement of the top–antitop production cross section at 5.36 TeV per nucleon pair in lead–lead collisions, using dilepton events, modern heavy-flavour tagging, and a dedicated b-jet calibration to study its centrality dependence.'
+result = 'https://cms-results.web.cern.ch/cms-results/public-results/publications/HIN-24-021/'
+resultLabel = 'Explore the CMS result'
+note = 'https://cds.cern.ch/record/2915245'
+noteLabel = 'See the jet-tagging note'
+
+[[cms]]
+code = 'EXO-24-031'
+kind = 'Exotica · 2025'
+title = 'Light pseudoscalars in four electrons'
+description = 'The first LHC search for Higgs decays to pairs of light pseudoscalars in the four-electron final state, using a purpose-built track-and-calorimeter classifier for highly collimated electron pairs.'
+result = 'https://cms-results.web.cern.ch/cms-results/public-results/publications/EXO-24-031/'
+resultLabel = 'Explore the CMS result'
+
+[[cms]]
+code = 'EXO-21-003'
+kind = 'Exotica · PRL 2023'
+title = 'Majorana neutrinos through VBF'
+description = 'The first vector-boson-fusion search for heavy Majorana neutrinos and the Weinberg operator, using same-sign dimuons to extend direct sensitivity into the multi-TeV regime.'
+result = 'https://cms-results.web.cern.ch/cms-results/public-results/publications/EXO-21-003/'
+resultLabel = 'Explore the CMS result'
 
 [[focus]]
 number = '01'

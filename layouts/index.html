@@ -57,7 +57,7 @@
         <p class="eyebrow">Selected research</p>
         <h2 id="research-title">Methods built around the physics.</h2>
       </div>
-      <p class="section-deck">A selection spanning fast detector simulation, particle representation learning, long sequences, CMS physics, and lepton-collider studies.</p>
+      <p class="section-deck">A selection spanning fast detector simulation, particle representation learning, long sequences, CMS analyses, and lepton-collider studies.</p>
     </div>
 
     {{ range where $home.research "featured" true }}
@@ -96,6 +96,33 @@
       </article>
       {{ end }}
     </div>
+
+    <section class="cms-program" aria-labelledby="cms-program-title">
+      <div class="cms-program-heading">
+        <div>
+          <p class="eyebrow eyebrow-light">CMS analysis program</p>
+          <h3 id="cms-program-title">{{ $home.cmsProgram.title }}</h3>
+        </div>
+        <p>{{ $home.cmsProgram.body }}</p>
+      </div>
+      <div class="cms-analysis-grid">
+        {{ range $home.cms }}
+        {{- $analysis := . -}}
+        <article class="cms-analysis">
+          <div class="cms-analysis-meta">
+            <p class="cms-analysis-code">{{ .code }}</p>
+            <p>{{ .kind }}</p>
+          </div>
+          <h4>{{ .title }}</h4>
+          <p>{{ .description }}</p>
+          <div class="card-links">
+            <a class="text-link" href="{{ .result }}">{{ .resultLabel }} <span aria-hidden="true">↗</span></a>
+            {{ with .note }}<a class="text-link" href="{{ . }}">{{ $analysis.noteLabel }} <span aria-hidden="true">↗</span></a>{{ end }}
+          </div>
+        </article>
+        {{ end }}
+      </div>
+    </section>
 
     <div class="research-more">
       <p>For the full publication record and citation details:</p>

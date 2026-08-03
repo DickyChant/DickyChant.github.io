@@ -5,7 +5,7 @@ A source-first Hugo site for [dickychant.github.io](https://dickychant.github.io
 ## What is here
 
 - An editorial one-page design for research, biography, selected pieces, appointments, education, and contact
-- Selected work on CaloTrilogy, Particle Transformer, structured state-space models, CMS physics, and lepton-collider studies
+- Selected work on CaloTrilogy, Particle Transformer, structured state-space models, four CMS analyses, and lepton-collider studies
 - A compact combined biography covering Northwestern–Fermilab, UW–Madison and the U.S. CMS LPC, Peking University, and CMS Offline Samples convenership
 - Responsive, locally processed images with explicit CERN credits
 - Accessible navigation, reduced-motion support, social metadata, and structured person data
@@ -41,6 +41,9 @@ Project descriptions are grounded in their primary records:
 - [CaloTrilogy](https://arxiv.org/abs/2606.04165)
 - [Particle Transformer](https://proceedings.mlr.press/v162/qu22b.html) and its [reference implementation](https://github.com/jet-universe/particle_transformer)
 - [Structured state-space models for high-energy physics](https://proceedings.mlr.press/v258/jiang25c.html)
+- [CMS study of WH production through vector-boson scattering](https://cms-results.web.cern.ch/cms-results/public-results/publications/HIG-23-007/)
+- [CMS measurement of top-pair production in lead–lead collisions](https://cms-results.web.cern.ch/cms-results/public-results/publications/HIN-24-021/) and its [PbPb jet-tagging performance note](https://cds.cern.ch/record/2915245)
+- [CMS search for light pseudoscalars in the four-electron final state](https://cms-results.web.cern.ch/cms-results/public-results/publications/EXO-24-031/)
 - [CMS search for Majorana neutrinos in vector-boson fusion](https://cms-results.web.cern.ch/cms-results/public-results/publications/EXO-21-003/)
 - [DELPHI simulation pipeline](https://github.com/delphi-fullDST-edm4hep/delphi-sim-pipeline)
 - [Google Scholar profile](https://scholar.google.com/citations?user=D7mhn64AAAAJ)
