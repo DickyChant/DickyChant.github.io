@@ -1,0 +1,155 @@
+[hero]
+eyebrow = 'Particle physics · machine learning · scientific computing'
+title = 'Finding structure in collisions—and in the data they leave behind.'
+intro = 'I develop physics-aware machine-learning methods, collider analyses, and reproducible tools for turning complex detector data into useful measurements.'
+affiliation = 'Northwestern University × Fermilab'
+affiliationDetail = 'Joint appointment · 2026–present'
+
+[about]
+title = 'Curious about the smallest scales and the largest datasets.'
+body = 'I am an experimental particle physicist at Northwestern University and Fermilab, and a convener of CMS Offline Samples. My work connects collider measurements, physics-aware machine learning, detector simulation, and the infrastructure that turns collisions into analysis-ready datasets.'
+note = 'The older CERN page described this as a superposition. The notation stays; the portfolio around it has caught up.'
+
+[[bio]]
+label = 'Now'
+title = 'Northwestern University × Fermilab'
+detail = 'Joint appointment · 2026–present'
+
+[[bio]]
+label = 'CMS'
+title = 'Offline Samples convener'
+detail = 'Physics Performance and Datasets · current'
+
+[[bio]]
+label = 'Previously'
+title = 'UW–Madison × U.S. CMS LPC'
+detail = 'Research affiliation · 2025–2026'
+
+[[bio]]
+label = 'Training'
+title = 'Peking University'
+detail = 'PhD, Particle and Nuclear Physics · 2025'
+
+[[research]]
+kind = 'Fast simulation · 2026'
+title = 'CaloTrilogy'
+description = 'A physics-guided approach to end-to-end calorimeter shower generation in one or a few integration steps, combining a learned shower prior with detector-aware objectives.'
+paper = 'https://arxiv.org/abs/2606.04165'
+paperLabel = 'Read the preprint'
+featured = true
+
+[[research]]
+kind = 'Jet physics · ICML 2022'
+title = 'Particle Transformer'
+description = 'A transformer architecture that encodes particle-interaction structure directly in attention, benchmarked on the 100-million-jet JetClass dataset.'
+paper = 'https://proceedings.mlr.press/v162/qu22b.html'
+paperLabel = 'Read the paper'
+code = 'https://github.com/jet-universe/particle_transformer'
+codeLabel = 'Explore the code'
+
+[[research]]
+kind = 'Long sequences · AISTATS 2025'
+title = 'State-space models for collider events'
+description = 'Structured state-space models paired with locality-sensitive hashing to model long, sparse particle sequences efficiently.'
+paper = 'https://proceedings.mlr.press/v258/jiang25c.html'
+paperLabel = 'Read the paper'
+
+[[research]]
+kind = 'CMS physics · PRL 2023'
+title = 'Majorana neutrinos at CMS'
+description = 'The first LHC search to use vector-boson fusion to probe heavy Majorana neutrinos and the Weinberg operator, extending direct sensitivity into the multi-TeV regime.'
+paper = 'https://cms-results.web.cern.ch/cms-results/public-results/publications/EXO-21-003/'
+paperLabel = 'Explore the CMS result'
+
+[[research]]
+kind = 'Lepton colliders · 2020–2025'
+title = 'Lepton-collider physics'
+description = 'A publication program spanning electron–muon, muon, same-sign muon, neutrino–lepton, and neutrino–neutrino colliders—from flavor and Majorana-neutrino searches to vector-boson scattering and quantum entanglement.'
+paper = 'https://scholar.google.com/citations?user=D7mhn64AAAAJ'
+paperLabel = 'See the publication record'
+code = 'https://github.com/delphi-fullDST-edm4hep/delphi-sim-pipeline'
+codeLabel = 'Explore DELPHI simulation'
+
+[[focus]]
+number = '01'
+title = 'Collider measurements'
+description = 'Analysis strategies for rare or structurally rich signatures, with attention to interpretable observables and robust uncertainty treatment.'
+
+[[focus]]
+number = '02'
+title = 'Physics-aware ML'
+description = 'Models that incorporate symmetry, geometry, or particle-interaction structure instead of treating detector data as generic tokens.'
+
+[[focus]]
+number = '03'
+title = 'Research infrastructure'
+description = 'Reproducible generation, simulation, and analysis workflows that scale from an exploratory notebook to distributed computing.'
+
+[[pages]]
+kind = 'Packaging experiment · Aug 2026'
+title = 'higgs-combine-tool'
+description = 'An experimental route to a pip-installable CMS Combine v11, built against the ROOT PyPI distribution with tested CI wheel artifacts and an explicit support boundary.'
+page = 'https://dickychant.github.io/combine_pypi/'
+pageLabel = 'Read the project page'
+repo = 'https://github.com/DickyChant/combine_pypi'
+repoLabel = 'View source'
+
+[[pages]]
+kind = 'Workbench guide · Aug 2026'
+title = 'Combine v11 on CERN SWAN'
+description = 'A reproducible CMSSW 16 and Combine v11 setup for CERN SWAN, including a dedicated Jupyter kernel, an idempotent installer, and end-to-end validation.'
+page = 'https://dickychant.github.io/combine_swan_integration/'
+pageLabel = 'Open the guide'
+repo = 'https://github.com/DickyChant/combine_swan_integration'
+repoLabel = 'View source'
+
+[[pages]]
+kind = 'Generator study · Jul 2026'
+title = 'jetutor'
+description = 'JetClass taught by different tutors: matched detector-level editions using Sherpa, Herwig, DIRE, and VINCIA for stress-testing jet taggers against generator choices.'
+page = 'https://dickychant.github.io/jetutor/'
+pageLabel = 'Explore the study'
+repo = 'https://github.com/DickyChant/jetutor'
+repoLabel = 'View source'
+
+[[pages]]
+kind = 'Lepton collider simulation · Jun 2026'
+title = 'DELPHI simulation pipeline'
+description = 'A generator-agnostic bridge from modern HepMC3 event generators into the legacy DELPHI detector simulation and reconstruction chain at the LEP Z pole.'
+page = 'https://github.com/delphi-fullDST-edm4hep/delphi-sim-pipeline'
+pageLabel = 'Explore the pipeline'
+
+[[pages]]
+kind = 'Software notebook · 2026'
+title = 'nano.rust'
+description = 'A semantics-first, pure-Rust NanoAOD framework exploring typed analysis states, native ROOT I/O, and reproducible validation against CMS Open Data.'
+page = 'https://dickychant.github.io/nano.rust/'
+pageLabel = 'Read the notes'
+repo = 'https://github.com/DickyChant/nano.rust'
+repoLabel = 'View source'
+
+[[appointments]]
+period = '2026–present'
+title = 'Northwestern University × Fermilab'
+detail = 'Joint appointment'
+
+[[appointments]]
+period = '2025–2026'
+title = 'University of Wisconsin–Madison × U.S. CMS LPC'
+detail = 'Research affiliation at the LHC Physics Center'
+
+[[education]]
+period = '2020–2025'
+degree = 'PhD, Particle and Nuclear Physics'
+place = 'School of Physics & State Key Laboratory of Nuclear Physics and Technology, Peking University'
+detail = 'Supervisor: Qiang Li'
+
+[[education]]
+period = '2016–2020'
+degree = 'BSc, Physics'
+place = 'School of Physics, Peking University'
+
+[[education]]
+period = '2017–2020'
+degree = 'BE'
+place = 'National School of Development, Peking University'
