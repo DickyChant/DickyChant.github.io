@@ -56,8 +56,17 @@ blockquote,
 p,
 h1,
 h2,
-h3 {
+h3,
+h4 {
   margin-top: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  overflow-wrap: break-word;
+  text-wrap: balance;
 }
 
 a {
@@ -132,17 +141,19 @@ button:focus-visible {
 }
 
 .wordmark-mark {
-  width: 39px;
-  height: 39px;
-  display: grid;
-  place-items: center;
-  color: var(--night);
-  background: var(--accent);
+  width: 42px;
+  height: 42px;
+  display: block;
+  overflow: hidden;
+  background: var(--paper);
+  border: 2px solid var(--accent);
   border-radius: 50%;
-  font-family: var(--mono);
-  font-size: 0.72rem;
-  font-weight: 800;
-  letter-spacing: -0.04em;
+}
+
+.wordmark-mark img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .wordmark-name {
@@ -362,6 +373,7 @@ button:focus-visible {
 }
 
 .hero-copy {
+  min-width: 0;
   padding-block: 30px;
 }
 
@@ -449,8 +461,9 @@ button:focus-visible {
 }
 
 .hero-visual {
+  min-width: 0;
   position: relative;
-  margin: 0 -6vw 0 0;
+  margin: 0;
 }
 
 .hero-visual::before {
@@ -639,13 +652,14 @@ button:focus-visible {
 
 .research-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   border-right: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
   border-left: 1px solid var(--line);
 }
 
 .research-card {
+  min-width: 0;
   min-height: 420px;
   display: flex;
   flex-direction: column;
@@ -723,10 +737,6 @@ button:focus-visible {
 .cms-program-heading {
   position: relative;
   z-index: 1;
-  display: grid;
-  grid-template-columns: minmax(0, 1.1fr) minmax(300px, 0.9fr);
-  align-items: end;
-  gap: clamp(36px, 7vw, 96px);
   margin-bottom: clamp(42px, 6vw, 68px);
 }
 
@@ -740,21 +750,17 @@ button:focus-visible {
   line-height: 0.98;
 }
 
-.cms-program-heading > p {
-  margin-bottom: 0;
-  color: rgba(255, 255, 255, 0.65);
-}
-
 .cms-analysis-grid {
   position: relative;
   z-index: 1;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   border-top: 1px solid var(--line-dark);
   border-left: 1px solid var(--line-dark);
 }
 
 .cms-analysis {
+  min-width: 0;
   min-height: 360px;
   display: flex;
   flex-direction: column;
@@ -842,17 +848,16 @@ button:focus-visible {
 
 .portrait-frame {
   position: relative;
-  padding: 13px 13px 0 0;
+  padding: 10px;
+  border-radius: 50%;
 }
 
 .portrait-frame::before {
   content: "";
   position: absolute;
-  top: 0;
-  right: 0;
-  width: 46%;
-  height: 38%;
-  background: var(--cyan);
+  inset: -7px 7px 7px -7px;
+  border: 1px solid #3c807e;
+  border-radius: 50%;
 }
 
 .portrait-frame::after {
@@ -861,7 +866,7 @@ button:focus-visible {
   height: 18px;
   position: absolute;
   right: -24px;
-  bottom: 18%;
+  bottom: 20%;
   background: var(--coral);
   border-radius: 50%;
 }
@@ -872,8 +877,10 @@ button:focus-visible {
   position: relative;
   z-index: 1;
   aspect-ratio: 1;
-  object-fit: contain;
-  filter: saturate(0.78) contrast(1.03);
+  object-fit: cover;
+  border: 7px solid var(--white);
+  border-radius: 50%;
+  filter: saturate(0.88) contrast(1.02);
 }
 
 .portrait-label {
@@ -1191,6 +1198,7 @@ button:focus-visible {
 }
 
 .contact-email {
+  max-width: 100%;
   display: inline-flex;
   align-items: center;
   gap: 14px;
@@ -1201,6 +1209,7 @@ button:focus-visible {
   letter-spacing: -0.035em;
   line-height: 1.1;
   text-decoration: none;
+  overflow-wrap: anywhere;
 }
 
 .profile-links {
@@ -1286,10 +1295,6 @@ button:focus-visible {
     gap: 40px;
   }
 
-  .hero-visual {
-    margin-right: -24px;
-  }
-
   .footer-grid {
     grid-template-columns: 1fr 1.4fr;
   }
@@ -1299,9 +1304,9 @@ button:focus-visible {
   }
 }
 
-@media (max-width: 820px) {
+@media (max-width: 960px) {
   :root {
-    --shell: min(100% - 34px, 680px);
+    --shell: min(100% - 40px, 820px);
   }
 
   html {
@@ -1362,8 +1367,8 @@ button:focus-visible {
   }
 
   .hero-visual {
-    width: calc(100% + 17px);
-    margin: 18px -17px 0 0;
+    width: 100%;
+    margin: 18px 0 0;
   }
 
   .hero-visual img {
@@ -1393,18 +1398,12 @@ button:focus-visible {
     min-height: 420px;
   }
 
-  .cms-program-heading,
   .cms-analysis-grid {
     grid-template-columns: 1fr;
   }
 
   .cms-program-heading {
-    align-items: start;
-    gap: 26px;
-  }
-
-  .cms-program-heading > p {
-    max-width: 600px;
+    max-width: 720px;
   }
 
   .cms-analysis {
@@ -1463,6 +1462,18 @@ button:focus-visible {
   .footer-build {
     grid-column: auto;
   }
+
+  .text-link,
+  .profile-links a,
+  .site-nav a,
+  .nav-toggle {
+    min-height: 44px;
+  }
+
+  .reveal-ready {
+    opacity: 1;
+    transform: none;
+  }
 }
 
 @media (max-width: 560px) {
@@ -1484,7 +1495,7 @@ button:focus-visible {
   }
 
   .hero h1 {
-    font-size: clamp(3.15rem, 16vw, 5rem);
+    font-size: clamp(2.7rem, 14vw, 4.8rem);
   }
 
   .hero-actions {
@@ -1548,6 +1559,10 @@ button:focus-visible {
 
   .cms-program {
     padding: 34px 24px;
+  }
+
+  .cms-program-heading h3 {
+    font-size: clamp(2.1rem, 11vw, 3rem);
   }
 
   .cms-analysis {

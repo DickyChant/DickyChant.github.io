@@ -3,9 +3,9 @@
 {{- $hero := resources.Get "images/cms-detector.webp" -}}
 {{- $heroSmall := $hero.Resize "720x webp q78" -}}
 {{- $heroLarge := $hero.Resize "1320x webp q84" -}}
-{{- $portrait := resources.Get "images/sitian-qian.jpg" -}}
-{{- $portraitSmall := $portrait.Resize "360x webp q84" -}}
-{{- $portraitLarge := $portrait.Resize "602x webp q88" -}}
+{{- $portrait := resources.Get "images/sitian-qian-event.jpg" -}}
+{{- $portraitSmall := $portrait.Fill "420x420 webp q84 Center" -}}
+{{- $portraitLarge := $portrait.Fill "760x760 webp q88 Center" -}}
 {{- $hgcal := resources.Get "images/hgcal-assembly.jpg" -}}
 {{- $hgcalSmall := $hgcal.Fill "720x600 webp q80 Center" -}}
 {{- $hgcalLarge := $hgcal.Fill "1200x1000 webp q84 Center" -}}
@@ -57,7 +57,7 @@
         <p class="eyebrow">Selected research</p>
         <h2 id="research-title">Methods built around the physics.</h2>
       </div>
-      <p class="section-deck">A selection spanning fast detector simulation, particle representation learning, long sequences, CMS analyses, and lepton-collider studies.</p>
+      <p class="section-deck">A selection spanning fast detector simulation, particle representation learning, quantum and sequence models, CMS analyses, and lepton-collider studies.</p>
     </div>
 
     {{ range where $home.research "featured" true }}
@@ -92,6 +92,7 @@
         <div class="card-links">
           <a class="text-link" href="{{ .paper }}">{{ .paperLabel }} <span aria-hidden="true">↗</span></a>
           {{ with .code }}<a class="text-link" href="{{ . }}">{{ $item.codeLabel }} <span aria-hidden="true">↗</span></a>{{ end }}
+          {{ with .extra }}<a class="text-link" href="{{ . }}">{{ $item.extraLabel }} <span aria-hidden="true">↗</span></a>{{ end }}
         </div>
       </article>
       {{ end }}
@@ -103,7 +104,6 @@
           <p class="eyebrow eyebrow-light">CMS analysis program</p>
           <h3 id="cms-program-title">{{ $home.cmsProgram.title }}</h3>
         </div>
-        <p>{{ $home.cmsProgram.body }}</p>
       </div>
       <div class="cms-analysis-grid">
         {{ range $home.cms }}
@@ -142,7 +142,7 @@
           width="{{ $portraitLarge.Width }}"
           height="{{ $portraitLarge.Height }}"
           loading="lazy"
-          alt="Portrait of Sitian Qian">
+          alt="Portrait of Sitian Qian at a public event">
       </div>
       <p class="portrait-label">Sitian Qian · 钱思天</p>
     </div>

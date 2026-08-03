@@ -1,7 +1,11 @@
+{{- $avatar := resources.Get "images/sitian-qian.jpg" -}}
+{{- $avatarMark := $avatar.Fill "96x96 webp q84 Center" -}}
 <header class="site-header" data-header>
   <div class="shell header-inner">
     <a class="wordmark" href="{{ site.Home.RelPermalink }}" aria-label="Sitian Qian, home">
-      <span class="wordmark-mark" aria-hidden="true">SQ</span>
+      <span class="wordmark-mark" aria-hidden="true">
+        <img src="{{ $avatarMark.RelPermalink }}" width="{{ $avatarMark.Width }}" height="{{ $avatarMark.Height }}" alt="">
+      </span>
       <span class="wordmark-name">Sitian Qian</span>
     </a>
     <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-nav-toggle>

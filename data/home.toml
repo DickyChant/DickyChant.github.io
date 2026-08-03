@@ -55,6 +55,15 @@ paper = 'https://proceedings.mlr.press/v258/jiang25c.html'
 paperLabel = 'Read the paper'
 
 [[research]]
+kind = 'Quantum machine learning · 2022–2026'
+title = 'Quantum models, made practical'
+description = 'From a six-qubit quantum-kernel classifier for CEPC Higgs events—tested on IBM and Origin hardware—to knowledge distillation for smaller, shallower quantum neural networks.'
+paper = 'https://arxiv.org/abs/2603.21586'
+paperLabel = 'Read the QNN study'
+extra = 'https://arxiv.org/abs/2209.12788'
+extraLabel = 'See the CEPC application'
+
+[[research]]
 kind = 'Lepton colliders · 2020–2025'
 title = 'Lepton-collider physics'
 description = 'A publication program spanning electron–muon, muon, same-sign muon, neutrino–lepton, and neutrino–neutrino colliders—from flavor and Majorana-neutrino searches to vector-boson scattering and quantum entanglement.'
@@ -64,8 +73,7 @@ code = 'https://github.com/delphi-fullDST-edm4hep/delphi-sim-pipeline'
 codeLabel = 'Explore DELPHI simulation'
 
 [cmsProgram]
-title = 'Four analyses, one experimental thread.'
-body = 'Across CMS, I use rare signatures and machine-learned reconstruction to study Higgs couplings, top production in hot QCD matter, light pseudoscalars, and neutrino-mass mechanisms.'
+title = 'I like colliding unconventional particles :)'
 
 [[cms]]
 code = 'HIG-23-007'
