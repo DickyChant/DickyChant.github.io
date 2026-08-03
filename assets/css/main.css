@@ -798,6 +798,61 @@ button:focus-visible {
   text-align: left;
 }
 
+.cms-analysis-plot {
+  margin: 0 0 30px;
+  overflow: hidden;
+  color: var(--night);
+  background: #fbfaf7;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+}
+
+.cms-analysis-plot-link {
+  aspect-ratio: 1;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  padding: clamp(7px, 1vw, 12px);
+  background: #fff;
+}
+
+.cms-analysis-plot img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: contain;
+  transition: transform 260ms ease;
+}
+
+.cms-analysis-plot-link:hover img,
+.cms-analysis-plot-link:focus-visible img {
+  transform: scale(1.015);
+}
+
+.cms-analysis-plot figcaption {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 13px 15px 14px;
+  border-top: 1px solid var(--line);
+  font-size: 0.76rem;
+  line-height: 1.35;
+}
+
+.cms-analysis-plot figcaption > span {
+  color: var(--ink-soft);
+}
+
+.cms-analysis-plot figcaption a {
+  flex: none;
+  color: #276d6b;
+  font-family: var(--mono);
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
 .cms-analysis h4 {
   margin: 0 0 20px;
   font-family: var(--serif);
@@ -843,10 +898,13 @@ button:focus-visible {
 
 .about-portrait-wrap {
   width: min(100%, 410px);
+  display: grid;
+  justify-items: center;
   justify-self: end;
 }
 
 .portrait-frame {
+  width: 100%;
   position: relative;
   padding: 10px;
   border-radius: 50%;
@@ -855,7 +913,7 @@ button:focus-visible {
 .portrait-frame::before {
   content: "";
   position: absolute;
-  inset: -7px 7px 7px -7px;
+  inset: 0;
   border: 1px solid #3c807e;
   border-radius: 50%;
 }
@@ -865,29 +923,41 @@ button:focus-visible {
   width: 18px;
   height: 18px;
   position: absolute;
-  right: -24px;
+  right: -14px;
   bottom: 20%;
   background: var(--coral);
   border-radius: 50%;
 }
 
-.portrait-frame img {
+.portrait-media {
   width: 100%;
-  height: auto;
   position: relative;
   z-index: 1;
   aspect-ratio: 1;
-  object-fit: cover;
+  box-sizing: border-box;
+  overflow: hidden;
   border: 7px solid var(--white);
   border-radius: 50%;
+  background: #766cd3;
+}
+
+.portrait-media img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
   filter: saturate(0.88) contrast(1.02);
+  transform: scale(1.18);
+  transform-origin: 48% 45%;
 }
 
 .portrait-label {
+  width: 100%;
   margin: 14px 0 0;
   font-family: var(--mono);
   font-size: 0.7rem;
   letter-spacing: 0.06em;
+  text-align: center;
   text-transform: uppercase;
 }
 
@@ -1567,6 +1637,12 @@ button:focus-visible {
 
   .cms-analysis {
     padding: 30px 24px;
+  }
+
+  .cms-analysis-plot figcaption {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 7px;
   }
 
   .cms-analysis-meta {
