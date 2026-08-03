@@ -1,0 +1,21 @@
+baseURL = 'https://dickychant.github.io/'
+locale = 'en'
+title = 'Sitian Qian — Particle Physics & Machine Learning'
+enableRobotsTXT = true
+disableKinds = ['taxonomy', 'term', 'RSS']
+
+[params]
+  author = 'Sitian Qian'
+  description = 'Particle physicist working across collider research, physics-aware machine learning, and scientific computing.'
+  email = 'sitian.qian@cern.ch'
+  github = 'https://github.com/DickyChant'
+  scholar = 'https://scholar.google.com/citations?user=D7mhn64AAAAJ'
+  cern = 'https://sqian.web.cern.ch/'
+  socialImage = 'images/sitian-qian-research-card.png'
+
+[build]
+  writeStats = false
+
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
