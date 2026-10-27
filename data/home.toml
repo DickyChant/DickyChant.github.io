@@ -90,7 +90,7 @@ plotLink = 'https://cms-results.web.cern.ch/cms-results/public-results/publicati
 
 [[cms]]
 code = 'HIN-24-021'
-kind = 'Heavy-ion physics · 2026'
+kind = 'Heavy-ion physics · JHEP 2026'
 title = 'Top quarks in lead–lead collisions'
 description = 'The first measurement of the top–antitop production cross section at 5.36 TeV per nucleon pair in lead–lead collisions, using dilepton events, modern heavy-flavour tagging, and a dedicated b-jet calibration to study its centrality dependence.'
 result = 'https://cms-results.web.cern.ch/cms-results/public-results/publications/HIN-24-021/'
@@ -105,7 +105,7 @@ plotLink = 'https://cms-results.web.cern.ch/cms-results/public-results/publicati
 
 [[cms]]
 code = 'EXO-24-031'
-kind = 'Exotica · 2025'
+kind = 'Exotica · PRL 2026'
 title = 'Light pseudoscalars in four electrons'
 description = 'The first LHC search for Higgs decays to pairs of light pseudoscalars in the four-electron final state, using a purpose-built track-and-calorimeter classifier for highly collimated electron pairs.'
 result = 'https://cms-results.web.cern.ch/cms-results/public-results/publications/EXO-24-031/'
