@@ -76,6 +76,19 @@ codeLabel = 'Explore DELPHI simulation'
 title = 'I like colliding unconventional particles :)'
 
 [[cms]]
+code = 'B2G-25-003'
+kind = 'Combinations · JHEP 2026'
+title = 'Heavy vector resonances, combined'
+description = 'A combined statistical analysis of searches for heavy vector resonances decaying to boson, quark, and lepton pairs. Interpreted in the heavy-vector-triplet framework, it excludes resonances below 5.5 TeV in a weakly coupled scenario and 4.8 TeV in a strongly coupled one: the most stringent HVT constraints to date.'
+result = 'https://cms-results.web.cern.ch/cms-results/public-results/publications/B2G-25-003/'
+resultLabel = 'Explore the CMS result'
+plot = 'images/cms/b2g-25-003-hvt-coupling-limits.png'
+plotAlt = 'Observed and expected 95% confidence-level upper limits on the fermion coupling g F versus the Higgs coupling g H for a 3 TeV heavy vector triplet resonance, showing the combined result well below the individual boson, lepton, and quark channels.'
+plotCaption = 'The combination outperforms every channel at 3 TeV.'
+plotFigure = 'CMS Figure 7a'
+plotLink = 'https://cms-results.web.cern.ch/cms-results/public-results/publications/B2G-25-003/#Figure_007-a'
+
+[[cms]]
 code = 'HIG-23-007'
 kind = 'Higgs physics · PLB 2025'
 title = 'The relative sign of Higgs couplings'
@@ -210,5 +223,5 @@ place = 'School of Physics, Peking University'
 
 [[education]]
 period = '2017–2020'
-degree = 'BE'
+degree = 'BEcon, Economics (double degree)'
 place = 'National School of Development, Peking University'
